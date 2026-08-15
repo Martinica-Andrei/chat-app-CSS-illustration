@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="src/index.css">
 
@@ -14,49 +18,52 @@
 </head>
 
 <body>
-  <section aria-labelledby="h1">
-    <h1 id="h1">Simple booking</h1>
-    <p> Stay in touch with our dog walkers through the chat interface. This makes it easy to
-      discuss arrangements and make bookings. Once the walk has been completed you can rate
-      your walker and book again all through the chat.</p>
-  </section>
-
-  <section aria-label="Application showcase">
-    <p>Samuel Green</p>
-    <p>Available to Walk</p>
-    <p aria-label="Samuel Green: ">That sounds great. I’d be happy with that.</p>
-    <p aria-label="Samuel Green: ">Could you send over some pictures of your dog, please?</p>
-
-    <div aria-label="Me: ">
-      <div>
-        <img src="images/dog-image-1.jpg" alt="">
-        <img src="images/dog-image-2.jpg" alt="">
-        <img src="images/dog-image-3.jpg" alt="">
-      </div>
+  <div class="content">
+    <main class="main" aria-labelledby="h1">
+      <h1 id="h1">Simple booking</h1>
       <p>
-        Here are a few pictures. She’s a happy girl!
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
       </p>
-    </div>
+    </main>
+    <section aria-label="Application showcase">
+      <p>Samuel Green</p>
+      <p>Available to Walk</p>
+      <p aria-label="Samuel Green: ">That sounds great. I’d be happy with that.</p>
+      <p aria-label="Samuel Green: ">Could you send over some pictures of your dog, please?</p>
 
-    <p aria-label="Me: ">Can you make it?</p>
-    <p aria-label="Samuel Green: ">
-      She looks so happy! The time we discussed works. How long shall I take her out for?
-    </p>
+      <div aria-label="Me: ">
+        <div>
+          <img src="images/dog-image-1.jpg" alt="">
+          <img src="images/dog-image-2.jpg" alt="">
+          <img src="images/dog-image-3.jpg" alt="">
+        </div>
+        <p>
+          Here are a few pictures. She’s a happy girl!
+        </p>
+      </div>
 
-    <div aria-label="Samuel Green: ">
-      <p>30 minute walk</p>
-      <p>$29</p>
-    </div>
+      <p aria-label="Me: ">Can you make it?</p>
+      <p aria-label="Samuel Green: ">
+        She looks so happy! The time we discussed works. How long shall I take her out for?
+      </p>
 
-    <div aria-label="Samuel Green: ">
-      <p>1 hour walk</p>
-      <p>$49</p>
-    </div>
+      <div aria-label="Samuel Green: ">
+        <p>30 minute walk</p>
+        <p>$29</p>
+      </div>
 
-    <div>
-      <p>Type a message…</p>
-    </div>
-  </section>
+      <div aria-label="Samuel Green: ">
+        <p>1 hour walk</p>
+        <p>$49</p>
+      </div>
+
+      <div>
+        <p>Type a message…</p>
+      </div>
+    </section>
+  </div>
 
 </body>
 
