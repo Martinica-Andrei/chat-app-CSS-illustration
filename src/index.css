@@ -14,13 +14,14 @@
     --Purple-600: hsl(276, 55%, 52%);
     --Gray-500: hsl(270, 7%, 64%);
     --Gray-300: hsl(206, 6%, 79%);
+    --Gray-200: hsl(270, 20%, 86%);
+    --Gray-100: hsl(270, 20%, 96%);
     --Purple-950: hsl(271, 36%, 24%);
 
     --Pink-500: hsl(293, 100%, 63%);
     --Purple-500: hsl(264, 100%, 61%);
 
     --White: hsl(0, 100%, 100%);
-    --Gray-100: hsl(270, 20%, 96%);
     --Purple-950: hsl(271, 36%, 24%);
     --Pink-400: hsl(289, 100%, 72%);
 }
@@ -79,17 +80,17 @@ p {
     padding: 10px;
 }
 
-.phone-content {
+/* Phone border
+--------------------------------------------------------------------------------- */
+
+.phone-border {
     box-shadow: 0 0 1px gray;
     border-radius: 30px;
     background-color: var(--Gray-100);
 }
 
-.phone-content img {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-}
+/* Phone header
+--------------------------------------------------------------------------------- */
 
 .phone header {
     background: linear-gradient(to right, var(--Purple-500), var(--Pink-500));
@@ -117,24 +118,27 @@ p {
 }
 
 .phone .avatar {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border: 1px solid var(--White);
-}
-
-.phone .sub-header {
-    color: var(--Purple-300);
-    font-size: 0.7rem;
+    border-radius: 50%;
 }
 
 .phone h2 {
     color: var(--White);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.8em;
+}
+
+.phone .sub-header {
+    color: var(--Purple-300);
+    font-size: 0.6rem;
 }
 
 .phone .header-right {
     color: var(--White);
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .phone-top-rectangle {
@@ -147,4 +151,44 @@ p {
     top: 0;
     left: 50%;
     transform: translate(-50%);
+}
+
+/* Phone content
+--------------------------------------------------------------------------------- */
+
+.phone-content {
+    padding: 15px 6px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chat-box-left,
+.chat-box-right {
+    padding: 10px 5px;
+    font-size: 0.6rem;
+}
+
+.chat-box-left {
+    border-radius: 10px 10px 10px 0;
+}
+
+.chat-box-right {
+    border-radius: 10px 10px 0 10px;
+}
+
+.images img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.images.right{
+    align-self: end;
+}
+
+.chat-box-left.light {
+    background-color: var(--Gray-200);
+    color: var(--Purple-600);
+    max-width: 60%;
 }
