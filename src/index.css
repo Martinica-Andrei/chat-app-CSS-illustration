@@ -26,10 +26,15 @@
     --Pink-400: hsl(289, 100%, 72%);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-size: 1rem;
     font-family: "Rubik", sans-serif;
     background-color: var(--Gray-100);
+    min-height: 100%;
 }
 
 h1 {
@@ -53,6 +58,7 @@ p {
     align-items: center;
     gap: 3.5rem;
     margin-top: 5rem;
+    height: 100%;
 }
 
 /* Main
@@ -279,7 +285,18 @@ p {
 --------------------------------------------------------------------------------- */
 
 @media screen and (min-width:800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        padding-left: 0;
+    }
+
     .content {
+        margin-top: 0;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -289,10 +306,6 @@ p {
     .main {
         width: 400px;
         text-align: left;
-    }
-
-    h1 {
-        padding-left: 0;
     }
 
     .main p {
@@ -305,13 +318,13 @@ p {
 
     .phone-background-desktop {
         position: absolute;
-        left: 50%;
+        left: 25%;
         top: 0;
         z-index: -1;
         background-color: var(--Purple-600);
         width: 40vw;
         height: 800px;
-        transform: translate(-100%, -20%);
+        transform: translate(-100%, -22%);
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
     }
