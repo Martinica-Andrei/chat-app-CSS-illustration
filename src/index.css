@@ -87,6 +87,10 @@ p {
     padding: 10px;
 }
 
+.phone-wrapper{
+    position:relative;
+}
+
 /* Phone background
 --------------------------------------------------------------------------------- */
 
@@ -295,6 +299,11 @@ p {
         padding-left: 0;
     }
 
+    .phone{
+        transform: scale(1.1);
+        margin-left: 1rem;
+    }
+
     .content {
         margin-top: 0;
         flex-direction: row;
@@ -320,12 +329,17 @@ p {
         position: absolute;
         left: 25%;
         top: 0;
-        z-index: -1;
         background-color: var(--Purple-600);
         width: 40vw;
         height: 800px;
         transform: translate(-100%, -22%);
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
+    }
+}
+
+@media screen and (min-width:850px) {
+    .phone{
+        transform: scale(1.2);
     }
 }
