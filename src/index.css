@@ -14,7 +14,7 @@
     --Purple-600: hsl(276, 55%, 52%);
     --Gray-500: hsl(270, 7%, 64%);
     --Gray-300: hsl(206, 6%, 79%);
-    --Gray-200: hsl(270, 20%, 86%);
+    --Gray-200: hsl(270, 20%, 90%);
     --Gray-100: hsl(270, 20%, 96%);
     --Purple-950: hsl(271, 36%, 24%);
 
@@ -157,33 +157,34 @@ p {
 --------------------------------------------------------------------------------- */
 
 .phone-content {
-    padding: 15px 6px 20px;
+    padding: 15px 6px 10px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .chat-box-left,
 .chat-box-right {
-    padding: 10px 5px;
     font-size: 0.6rem;
 }
 
 .chat-box-left {
+    padding: 10px 5px;
     border-radius: 10px 10px 10px 0;
 }
 
 .chat-box-right {
     border-radius: 10px 10px 0 10px;
+    align-self: end;
 }
 
-.images img{
+.images img {
     width: 50px;
     height: 50px;
     border-radius: 15px;
 }
 
-.images.right{
+.images.right {
     align-self: end;
 }
 
@@ -191,4 +192,67 @@ p {
     background-color: var(--Gray-200);
     color: var(--Purple-600);
     max-width: 60%;
+}
+
+.chat-box-right.light {
+    background-color: var(--White);
+    padding: 10px;
+    color: var(--Gray-500);
+    max-width: 60%;
+}
+
+.chat-box-left.dark {
+    background-image: linear-gradient(to right, var(--Purple-500), var(--Pink-500));
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.chat-box-left.dark p {
+    color: white;
+}
+
+.chat-box-left .left{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.circle-symbol{
+    width:15px;
+    height: 15px;
+    background: transparent;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.type-message{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+}
+
+.type-message .prompt{
+    font-size: 0.6rem;
+    color: var(--Gray-300);
+}
+
+.type-message .search-symbol{
+    background-color: var(--Purple-950);
+    border-radius: 50%;
+    padding:5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--White);
 }
