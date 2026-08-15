@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://martinica-andrei.github.io/chat-app-CSS-illustration/)
 
 ### Built with
 
