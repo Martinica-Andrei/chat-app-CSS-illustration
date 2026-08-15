@@ -81,7 +81,7 @@ p {
     position: relative;
     background-color: var(--white);
     border-radius: 30px;
-    width: 280px;
+    width: 17.5em;
     box-shadow: 1px 1px 3px gray;
     padding: 10px;
     animation: shadow 1s forwards;
@@ -92,10 +92,11 @@ p {
 }
 
 @keyframes shadow {
-    0%{
+    0% {
         box-shadow: 0 0 gray;
     }
-    100%{
+
+    100% {
         box-shadow: 10px 10px gray;
     }
 }
@@ -129,7 +130,7 @@ p {
 
 .phone header {
     background: linear-gradient(to right, var(--purple-500), var(--pink-500));
-    padding: 30px 15px 20px 15px;
+    padding: 1.875em 0.9375em 1.25em 0.9375em;
     border-radius: 30px 30px 5px 5px;
     display: flex;
     justify-content: space-between;
@@ -138,14 +139,14 @@ p {
 
 .phone .header-left {
     display: flex;
-    gap: 10px;
+    gap: 0.625em;
     align-items: center;
 }
 
 .phone .header-left-images {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.3125em;
 }
 
 .phone .header-left-images p {
@@ -153,8 +154,8 @@ p {
 }
 
 .phone .avatar {
-    width: 25px;
-    height: 25px;
+    width: 1.5625em;
+    height: 1.5625em;
     border: 1px solid var(--white);
     border-radius: 50%;
 }
@@ -167,19 +168,19 @@ p {
 
 .phone .sub-header {
     color: var(--purple-300);
-    font-size: 0.6rem;
+    font-size: 0.6em;
 }
 
 .phone .header-right {
     color: var(--white);
-    font-size: 0.8rem;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
 .phone-top-rectangle {
     position: absolute;
     width: 55%;
-    height: 30px;
+    height: 1.875em;
     background-color: var(--white);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -192,19 +193,19 @@ p {
 --------------------------------------------------------------------------------- */
 
 .phone-content {
-    padding: 15px 6px 10px;
+    padding: 0.9375em 0.375em 0.625em;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625em;
 }
 
-.chat-box-left,
-.chat-box-right {
-    font-size: 0.6rem;
+p.chat-box-left,
+p.chat-box-right {
+    font-size: 0.6em;
 }
 
 .chat-box-left {
-    padding: 10px 5px;
+    padding: 0.625em 0.3125em;
     border-radius: 10px 10px 10px 0;
 }
 
@@ -214,8 +215,8 @@ p {
 }
 
 .images img {
-    width: 50px;
-    height: 50px;
+    width: 3.125em;
+    height: 3.125em;
     border-radius: 15px;
 }
 
@@ -231,7 +232,7 @@ p {
 
 .chat-box-right.light {
     background-color: var(--white);
-    padding: 10px;
+    padding: 0.625em;
     color: var(--gray-500);
     max-width: 60%;
 }
@@ -242,53 +243,54 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
 }
 
 .chat-box-left.dark p {
     color: white;
+    font-size: 0.6em;
 }
 
 .chat-box-left .left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625em;
 }
 
-.price {
+.chat-box-left.dark .price {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 .circle-symbol {
-    width: 15px;
-    height: 15px;
+    width: 0.9375em; 
+    height: 0.9375em;
     background: transparent;
     border: 1px solid white;
     border-radius: 50%;
 }
 
 .type-message {
-    margin-top: 0.5rem;
+    margin-top: 0.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
     border-radius: 30px;
-    padding: 5px 10px 5px 10px;
+    padding: 0.3125em 0.625em 0.3125em 0.625em;
 }
 
 .type-message .prompt {
-    font-size: 0.6rem;
+    font-size: 0.6em;
     color: var(--gray-300);
 }
 
 .type-message .search-symbol {
     background-color: var(--purple-950);
     border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 1rem;
+    padding: 0.3125em 0.625em;
+    font-size: 1em;
     font-weight: bold;
     color: var(--white);
 }
@@ -307,12 +309,17 @@ p {
         padding-left: 0;
     }
 
+    .phone{
+        font-size: 1.2rem;
+    }
+
     .content {
         margin-top: 0;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 6rem;
+        padding: 0 10px;
     }
 
     .main {
@@ -333,8 +340,11 @@ p {
     }
 }
 
-@media (prefers-reduced-motion: reduce){
-    *, ::before, ::after{
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
         animation-duration: 0.001ms !important;
     }
 }
