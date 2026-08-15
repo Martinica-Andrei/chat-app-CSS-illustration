@@ -10,19 +10,19 @@
 }
 
 :root {
-    --Purple-300: hsl(276, 100%, 81%);
-    --Purple-600: hsl(276, 55%, 52%);
-    --Gray-500: hsl(270, 7%, 64%);
-    --Gray-300: hsl(206, 6%, 79%);
-    --Gray-200: hsl(270, 20%, 90%);
-    --Gray-100: hsl(270, 20%, 96%);
-    --Purple-950: hsl(271, 36%, 24%);
+    --purple-300: hsl(276, 100%, 81%);
+    --purple-600: hsl(276, 55%, 52%);
+    --gray-500: hsl(270, 7%, 64%);
+    --gray-300: hsl(206, 6%, 79%);
+    --gray-200: hsl(270, 20%, 90%);
+    --gray-100: hsl(270, 20%, 96%);
+    --purple-950: hsl(271, 36%, 24%);
 
-    --Pink-500: hsl(293, 100%, 63%);
-    --Purple-500: hsl(264, 100%, 61%);
+    --pink-500: hsl(293, 100%, 63%);
+    --purple-500: hsl(264, 100%, 61%);
 
-    --White: hsl(0, 100%, 100%);
-    --Pink-400: hsl(289, 100%, 72%);
+    --white: hsl(0, 100%, 100%);
+    --pink-400: hsl(289, 100%, 72%);
 }
 
 html {
@@ -32,20 +32,20 @@ html {
 body {
     font-size: 1rem;
     font-family: "Rubik", sans-serif;
-    background-color: var(--Gray-100);
+    background-color: var(--gray-100);
     min-height: 100%;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: var(--Purple-950);
+    color: var(--purple-950);
     margin-bottom: 1rem;
     padding: 5px;
     font-weight: 500;
 }
 
 p {
-    color: var(--Gray-500);
+    color: var(--gray-500);
 }
 
 /* Content
@@ -79,7 +79,7 @@ p {
 
 .phone {
     position: relative;
-    background-color: var(--White);
+    background-color: var(--white);
     border-radius: 30px;
     width: 280px;
     box-shadow: 1px 1px 3px gray;
@@ -107,7 +107,7 @@ p {
     position: absolute;
     left: 50%;
     top: 0;
-    background-image: linear-gradient(to top, var(--Purple-500), var(--Pink-500));
+    background-image: linear-gradient(to top, var(--purple-500), var(--pink-500));
     width: 100vw;
     height: 700px;
     transform: translate(-100%, -22%);
@@ -121,14 +121,14 @@ p {
 .phone-border {
     box-shadow: 0 0 1px gray;
     border-radius: 30px;
-    background-color: var(--Gray-100);
+    background-color: var(--gray-100);
 }
 
 /* Phone header
 --------------------------------------------------------------------------------- */
 
 .phone header {
-    background: linear-gradient(to right, var(--Purple-500), var(--Pink-500));
+    background: linear-gradient(to right, var(--purple-500), var(--pink-500));
     padding: 30px 15px 20px 15px;
     border-radius: 30px 30px 5px 5px;
     display: flex;
@@ -149,29 +149,29 @@ p {
 }
 
 .phone .header-left-images p {
-    color: var(--White);
+    color: var(--white);
 }
 
 .phone .avatar {
     width: 25px;
     height: 25px;
-    border: 1px solid var(--White);
+    border: 1px solid var(--white);
     border-radius: 50%;
 }
 
 .phone h2 {
-    color: var(--White);
+    color: var(--white);
     font-weight: 500;
     font-size: 0.8em;
 }
 
 .phone .sub-header {
-    color: var(--Purple-300);
+    color: var(--purple-300);
     font-size: 0.6rem;
 }
 
 .phone .header-right {
-    color: var(--White);
+    color: var(--white);
     font-size: 0.8rem;
     font-weight: bold;
 }
@@ -180,7 +180,7 @@ p {
     position: absolute;
     width: 55%;
     height: 30px;
-    background-color: var(--White);
+    background-color: var(--white);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     top: 0;
@@ -224,20 +224,20 @@ p {
 }
 
 .chat-box-left.light {
-    background-color: var(--Gray-200);
-    color: var(--Purple-600);
+    background-color: var(--gray-200);
+    color: var(--purple-600);
     max-width: 60%;
 }
 
 .chat-box-right.light {
-    background-color: var(--White);
+    background-color: var(--white);
     padding: 10px;
-    color: var(--Gray-500);
+    color: var(--gray-500);
     max-width: 60%;
 }
 
 .chat-box-left.dark {
-    background-image: linear-gradient(to right, var(--Purple-500), var(--Pink-500));
+    background-image: linear-gradient(to right, var(--purple-500), var(--pink-500));
     max-width: 70%;
     display: flex;
     align-items: center;
@@ -274,23 +274,23 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--White);
+    background-color: var(--white);
     border-radius: 30px;
     padding: 5px 10px 5px 10px;
 }
 
 .type-message .prompt {
     font-size: 0.6rem;
-    color: var(--Gray-300);
+    color: var(--gray-300);
 }
 
 .type-message .search-symbol {
-    background-color: var(--Purple-950);
+    background-color: var(--purple-950);
     border-radius: 50%;
     padding: 5px 10px;
     font-size: 1rem;
     font-weight: bold;
-    color: var(--White);
+    color: var(--white);
 }
 
 /* Media query
