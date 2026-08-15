@@ -85,10 +85,20 @@ p {
     width: 280px;
     box-shadow: 1px 1px 3px gray;
     padding: 10px;
+    animation: shadow 1s forwards;
 }
 
 .phone-wrapper {
     position: relative;
+}
+
+@keyframes shadow {
+    0%{
+        box-shadow: 0 0 gray;
+    }
+    100%{
+        box-shadow: 10px 10px gray;
+    }
 }
 
 /* Phone background
