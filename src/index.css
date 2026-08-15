@@ -307,11 +307,6 @@ p {
         padding-left: 0;
     }
 
-    .phone {
-        transform: scale(1.1);
-        margin-left: 1rem;
-    }
-
     .content {
         margin-top: 0;
         flex-direction: row;
@@ -335,12 +330,6 @@ p {
         width: 40vw;
         height: 900px;
         transform: translate(-100%, -22%);
-    }
-}
-
-@media screen and (min-width:850px) {
-    .phone {
-        transform: scale(1.2);
     }
 }
 
