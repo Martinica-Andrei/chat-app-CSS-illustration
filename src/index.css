@@ -33,9 +33,9 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color:var(--Purple-950);
+    color: var(--Purple-950);
     margin-bottom: 1rem;
-    padding:5px;
+    padding: 5px;
     font-weight: 500;
 }
 
@@ -65,9 +65,86 @@ p {
     padding: 0 1rem;
 }
 
-/* Background
+/* Phone
 --------------------------------------------------------------------------------- */
 
-.background {
+.phone {
+    position: relative;
+    background-color: var(--White);
+    border-radius: 30px;
+    margin: 0 auto 0;
+    width: 300px;
+    box-shadow: 1px 1px 3px gray;
+    margin-top: 5rem;
+    padding: 10px;
+}
+
+.phone-content {
+    box-shadow: 0 0 1px gray;
+    border-radius: 30px;
+    background-color: var(--Gray-100);
+}
+
+.phone-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.phone header {
+    background: linear-gradient(to right, var(--Purple-500), var(--Pink-500));
+    padding: 30px 15px 20px 15px;
+    border-radius: 30px 30px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone .header-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone .header-left-images {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone .header-left-images p {
+    color: var(--White);
+}
+
+.phone .avatar {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--White);
+}
+
+.phone .sub-header {
+    color: var(--Purple-300);
+    font-size: 0.7rem;
+}
+
+.phone h2 {
+    color: var(--White);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.phone .header-right {
+    color: var(--White);
+}
+
+.phone-top-rectangle {
     position: absolute;
+    width: 55%;
+    height: 30px;
+    background-color: var(--White);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
