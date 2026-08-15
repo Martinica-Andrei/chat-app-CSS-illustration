@@ -264,7 +264,7 @@ p.chat-box-right {
 }
 
 .circle-symbol {
-    width: 0.9375em; 
+    width: 0.9375em;
     height: 0.9375em;
     background: transparent;
     border: 1px solid white;
@@ -303,14 +303,15 @@ p.chat-box-right {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     h1 {
         padding-left: 0;
     }
 
-    .phone{
-        font-size: 1.2rem;
+    .phone {
+        font-size: 1.1rem;
     }
 
     .content {
@@ -318,7 +319,7 @@ p.chat-box-right {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 6rem;
+        gap: 4rem;
         padding: 0 10px;
     }
 
@@ -346,5 +347,15 @@ p.chat-box-right {
     ::before,
     ::after {
         animation-duration: 0.001ms !important;
+    }
+}
+
+@media screen and (min-width:860px) {
+    .phone {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        gap: 6rem;
     }
 }
