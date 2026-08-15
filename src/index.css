@@ -108,7 +108,7 @@ p {
     position: absolute;
     left: 50%;
     top: 0;
-    background-color: var(--Purple-600);
+    background-image: linear-gradient(to top, var(--Purple-500), var(--Pink-500));
     width: 100vw;
     height: 700px;
     transform: translate(-100%, -22%);
